@@ -1,17 +1,29 @@
 <html>
-  <head>
-    <title>head</title>
-    <script src="clmtrackr.js"></script>
 
-    <style>
-      body {
-        margin: 0;
-        overflow: hidden;
-      }
-    </style>
-  </head>
-  <body>
-    <video id="cam"  width="400" height="300" autoplay></video>
-    <script src="content.js"></script>
-  </body>
+<head>
+  <title>head</title>
+  <script src="clmtrackr.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <video id="cam" width="400" height="300" autoplay></video>
+  <script src="content.js"></script>
+
+
+  <style>
+    video {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  </style>
+
+</body>
+
 </html>
