@@ -68,8 +68,7 @@ setTimeout(function() {
   ctracker.init();
   ctracker.start(video);
   setInterval(function() {
-    // console.log( ctracker.getCurrentPosition() );
-
+    // Mouth open
     let top = ctracker.getCurrentPosition()[60]; //[5,6]
     let bottom = ctracker.getCurrentPosition()[57]; //[5,6]
 
@@ -78,6 +77,11 @@ setTimeout(function() {
     var distance = Math.sqrt(a * a + b * b);
     // var distanceclean = Math.floor(distance);
     // console.log(distanceclean);
+    //
+    //   let eye = ctracker.getCurrentPosition()[32];
+    //   if (eye < 1){
+    //   console.log('eye is closed');
+    // }
     chrome.runtime.sendMessage(distance);
   }, 1000);
 }, 5000);
